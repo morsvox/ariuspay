@@ -47,7 +47,7 @@ class Response extends HTTPResponse{
             "url" => "https://sandbox.ariuspay.ru/paynet/api/v2/",
             "request" => "",
             "endpoint" => "1144",
-            "merchant_key" => "99347351-273F-4D88-84B4-89793AE62D94",
+            "merchant_key" => "2BA072D3-6931-4ACB-A41D-9F0DCD775EB8",
             "merchant_login" => "ariuspay",
             "operation" => "sale-form",
             "fields" => [
@@ -69,7 +69,7 @@ class Response extends HTTPResponse{
         $this->_endpoint = isset($d["endpoint"])?$d["endpoint"]:"1144";
         $this->_operation = isset($d["operation"])?$d["operation"]:"";
         $this->_merchant_login = isset($d["merchant_login"])?$d["merchant_login"]:"ariuspay";
-        $this->_merchant_key = isset($d["merchant_key"])?$d["merchant_key"]:"99347351-273F-4D88-84B4-89793AE62D94";
+        $this->_merchant_key = isset($d["merchant_key"])?$d["merchant_key"]:"2BA072D3-6931-4ACB-A41D-9F0DCD775EB8";
         $this->_control_fields = $d["control"];
     }
     public function check(){
