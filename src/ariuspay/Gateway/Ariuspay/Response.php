@@ -46,9 +46,9 @@ class Response extends HTTPResponse{
     public function __construct($d=[
             "url" => "https://sandbox.ariuspay.ru/paynet/api/v2/",
             "request" => "",
-            "endpoint" => "1054",
+            "endpoint" => "1053",
             "merchant_key" => "2BA072D3-6931-4ACB-A41D-9F0DCD775EB8",
-            "merchant_login" => "ariuspay",
+            "merchant_login" => "moneyclick-sbox",
             "operation" => "sale-form",
             "fields" => [
                 "error-message","error-code","type","status","serial-number",
@@ -66,9 +66,9 @@ class Response extends HTTPResponse{
         ];
         if(isset($d["fields"]))$constructData["fields"]=$d["fields"];
         parent::__construct($constructData);
-        $this->_endpoint = isset($d["endpoint"])?$d["endpoint"]:"1054";
+        $this->_endpoint = isset($d["endpoint"])?$d["endpoint"]:"1053";
         $this->_operation = isset($d["operation"])?$d["operation"]:"";
-        $this->_merchant_login = isset($d["merchant_login"])?$d["merchant_login"]:"ariuspay";
+        $this->_merchant_login = isset($d["merchant_login"])?$d["merchant_login"]:"moneyclick-sbox";
         $this->_merchant_key = isset($d["merchant_key"])?$d["merchant_key"]:"2BA072D3-6931-4ACB-A41D-9F0DCD775EB8";
         $this->_control_fields = $d["control"];
     }

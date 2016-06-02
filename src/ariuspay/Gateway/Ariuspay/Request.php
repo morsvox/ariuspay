@@ -46,9 +46,9 @@ class Request extends HTTPRequest{
     protected $_control_fields;
     public function __construct($d=[
             "url" => "https://sandbox.ariuspay.ru/paynet/api/v2/",
-            "endpoint" => "1054",
+            "endpoint" => "1053",
             "merchant_key" => "2BA072D3-6931-4ACB-A41D-9F0DCD775EB8",
-            "merchant_login" => "ariuspay",
+            "merchant_login" => "moneyclick-sbox",
             "operation" => "sale-form",
             "fields" => ["client_orderid","orderid","order_desc",
                     "first_name","last_name","ssn","birthday","address1","city","state",
@@ -62,9 +62,9 @@ class Request extends HTTPRequest{
         ]){
         $d["url"] = isset($d["url"])?$d["url"]:"https://sandbox.ariuspay.ru/paynet/api/v2/";
         parent::__construct(["url"=>$d["url"],"fields"=>$d["fields"],"data"=>$d["data"]]);
-        $this->_endpoint = isset($d["endpoint"])?$d["endpoint"]:"1054";
+        $this->_endpoint = isset($d["endpoint"])?$d["endpoint"]:"1053";
         $this->_operation = isset($d["operation"])?$d["operation"]:"";
-        $this->_merchant_login = isset($d["merchant_login"])?$d["merchant_login"]:"ariuspay";
+        $this->_merchant_login = isset($d["merchant_login"])?$d["merchant_login"]:"moneyclick-sbox";
         $this->_merchant_key = isset($d["merchant_key"])?$d["merchant_key"]:"2BA072D3-6931-4ACB-A41D-9F0DCD775EB8";
         $this->_control_fields = $d["control"];
     }
