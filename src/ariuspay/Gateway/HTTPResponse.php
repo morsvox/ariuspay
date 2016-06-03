@@ -27,5 +27,8 @@ class HTTPResponse extends Parameters{
     public function __toString(){
         return "RESPONSE: ".ariuspay::obj2str($this->_params);
     }
+    public function __returnParams(){
+        return ($this->_params);
+    }
 }
 ?>
