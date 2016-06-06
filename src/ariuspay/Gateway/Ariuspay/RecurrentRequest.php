@@ -11,6 +11,7 @@ use \ariuspay\Gateway\Ariuspay\Request as Request;
 class RecurrentRequest extends Request{
     public function __construct($d){
         parent::__construct([
+        	"endpoint" => "1056",
             "operation" => "make-rebill",
             "fields" => [
 				"client_orderid","cardrefid","amount","currency","cvv2","ipaddress","comment","order_desc"
