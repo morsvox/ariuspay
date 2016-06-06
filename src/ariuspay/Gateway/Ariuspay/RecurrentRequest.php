@@ -14,7 +14,7 @@ class RecurrentRequest extends Request{
         	"endpoint" => "1056",
             "operation" => "make-rebill",
             "fields" => [
-				"login","client_orderid","cardrefid","amount","currency","cvv2","ipaddress","comment","order_desc"
+				"login","client_orderid","cardrefid","amount","currency","cvv2","ipaddress","comment","order_desc","control"
             ],
             "control" => ["login","client_orderid","cardrefid","amount","currency" ,"merchant_control"],
             "data" => $d
